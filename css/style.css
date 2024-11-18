@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #212529;
+  color: #e9ecef;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #2d333b;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.add-todo-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-todo-form input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #3a3f47;
+  color: #e9ecef;
+}
+
+.add-todo-form input::placeholder {
+  color: #aaa;
+}
+
+.add-todo-form button {
+  padding: 8px 15px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #2a9d8f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-todo-form button:hover {
+  background-color: #21867a;
+}
+
+.todos-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.todos-table th,
+.todos-table td {
+  padding: 10px;
+  text-align: center;
+}
+
+.todos-table th {
+  background-color: #3a3f47;
+  color: #e9ecef;
+}
+
+.todos-table tbody tr:nth-child(even) {
+  background-color: #3a3f47;
+}
+
+.todos-table tbody tr:nth-child(odd) {
+  background-color: #333841;
+}
+
+.todos-table td {
+  color: #e9ecef;
+}
+
+.delete-btn {
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #e63946;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #c72c3e;
+}
+
+.unhighlighted {
+  background-color: #333841; /* lighter background to show it as 'unhighlighted' */
+  opacity: 0.5; /* Reduce opacity for a faded effect */
+}

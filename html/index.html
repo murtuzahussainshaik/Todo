@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Todos</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo List</h1>
+      <!-- Form to Add New Todo -->
+      <div class="add-todo-form">
+        <input type="text" id="todo-description" placeholder="Enter todo" />
+        <input type="date" id="todo-due-date" />
+        <button id="add-todo-btn">Add Todo</button>
+      </div>
+
+      <div class="todos-table">
+        <table class="actual-table">
+          <thead>
+            <th>Todo</th>
+            <th>Due date</th>
+            <th>Status</th>
+            <th>Action</th>
+          </thead>
+          <tbody class="table-body">
+            <tr>
+              <td>Do exercise</td>
+              <td>14/11/2024</td>
+              <td>Pending</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
